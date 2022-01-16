@@ -1,6 +1,6 @@
-# shopifychallenge
+# Shopify 2022 Intern Challenge
 
-This application is a simple inventory tracker that allows for CRUD operations using a REST API. It is built with Spring Boot connected to a MySQL database. 
+This application is a simple inventory tracker that allows for CRUD operations through a REST API. It is built with Spring Boot connected to a MySQL database. 
 
 GET - /inventory/all
 POST –  /inventory/add
