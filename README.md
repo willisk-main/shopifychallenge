@@ -5,14 +5,17 @@
    It is built with Spring Boot using MySQL for the database. Ideally the application would be dockerized and deployed alongside a MySQL database image but for our purposes, this application runs locally on port 8080. The easiest way to get started is to run the maven project (folder named "shopify) in an IDE such as IntelliJ then using a REST client such as Postman to make requests. This application requires a MySQL database named "inventory" running locally on port 3306 (default) and the login credentials added in the application.properties file in the maven project - located at "src/main/resources/application.properties" in the shopify folder. 
 
 
+
 The following operations are possible:
 
 1. Retrieve all inventory items as a JSON file (.../inventory/all)
     - GET request to the URL localhost:8080/inventory/all
 
+
 2. Find an existing item by id (.../inventory/{id})
     - GET request to the url localhost:8080/inventory/{id}
     - Replace {id} with the integer value of the item being searched
+
 
 4. Create a new inventory item (...inventory/add)
     - POST request to localhost:8080/inventory/add
@@ -23,6 +26,7 @@ The following operations are possible:
         "price": 449.99,
         "quantity": 19
       }
+      
       
 3. Update an existing item (.../inventory/update)
     - PUT request to localhost:8080/inventory/update
@@ -36,9 +40,11 @@ The following operations are possible:
         "quantity": 4
       }    
 
+
 4. Delete an existing item (.../inventory/delete/{id})
     - DELETE request to localhost:8080/inventory/delete/{id}
     - Replace {id} with the integer value of the item being deleted
+
 
 5. Download all inventory items as a CSV file (...inventory/csv/)
     - Navigate to localhost:8080 and open the link labeled "click here" (the download should begin automatically)
