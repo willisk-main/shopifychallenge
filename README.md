@@ -1,6 +1,6 @@
 # Shopify 2022 Intern Challenge
 
-   This is a simple inventory tracker that allows for CRUD operations through a REST API. In addition, this app allows downloading of all the currently stored items as a CSV file. 
+   This is a simple inventory tracker that allows for CRUD operations through a REST API. In addition, this app allows downloading of all the currently stored product items as a CSV file. 
 
    It is built with Spring Boot using MySQL for the database. Ideally the application would be dockerized and deployed alongside a MySQL database image but for our purposes, this application runs locally on port 8080. The easiest way to get started is to run the maven project (folder named "shopify) in an IDE such as IntelliJ then using a REST client such as Postman to make requests. This application requires a MySQL database named "inventory" running locally on port 3306 (default) and the login credentials added in the application.properties file in the maven project - located at "src/main/resources/application.properties" in the shopify folder. 
 
