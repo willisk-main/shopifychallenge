@@ -6,7 +6,7 @@
 
 
 
-The following operations are possible:
+The following operations are possible and will return a 200 status code if successful:
 
 1. Retrieve all inventory items as a JSON file (.../inventory/all)
     - GET request to the URL localhost:8080/inventory/all
@@ -14,12 +14,12 @@ The following operations are possible:
 
 2. Find an existing item by id (.../inventory/{id})
     - GET request to the url localhost:8080/inventory/{id}
-    - Replace {id} with the integer value of the item being searched
+    - Replace {id} with the integer value of the item being searched. The request will return an error if the id does not exist.
 
 
 4. Create a new inventory item (...inventory/add)
     - POST request to localhost:8080/inventory/add
-    - Include a JSON body of the item being added, for example:
+    - Include a JSON body of the item being added. The id will be generated automatically. An example request body in JSON:
       {
         "name": "Apple Watch 7",
         "description": "GPS+Cellular",
@@ -30,8 +30,8 @@ The following operations are possible:
       
 3. Update an existing item (.../inventory/update)
     - PUT request to localhost:8080/inventory/update
-    - Include a JSON body of the item being added and make sure to include the id. The request will return an error if the id does not exist.
-    - An example of an item to update:
+    - Include a JSON body of the item being added and make sure to include the id. The request will create a new item if the id does not exist.
+    - An example JSON body of an item to update:
       {
         "id": 1
         "name": "Apple Watch 7",
