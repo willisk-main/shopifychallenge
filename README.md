@@ -6,7 +6,7 @@ It is built with Spring Boot using MySQL for the database. Ideally the applicati
 
 ## Getting Started
 **To get started:**
-   1. Open the "shopify" folder as an existing source in an IDE such as [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows). 
+   1. Open the `/shopify` folder as an existing source in an IDE such as [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows). 
    2. Create a [MySql](https://dev.mysql.com/downloads/mysql/) database named "inventory" running on localhost:3306
    3. Add MySQL login credentials in the "application.properties" file in the maven project - located at    `src/main/resources/application.properties` in the /shopify folder. 
    4. Run the java application located at `shopify/src/main/java/com/willisk/shopify/ShopifyApplication.java`
