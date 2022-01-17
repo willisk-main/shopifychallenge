@@ -6,22 +6,22 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 **Install [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), [MySQL](https://dev.mysql.com/downloads/mysql/) and [Postman](https://www.postman.com/downloads/)**
    1. Start a new MySQL server on localhost port 3306.
    2. In the MySQL command line interface create a new database with the command 
-   ```
-   create database inventory;
-   ```
+      ```
+      create database inventory;
+      ```
    3. Download/unzip or clone the *shopifychallenge* package from github 
-   ```
-   git clone https://github.com/willisk-main/shopifychallenge.git
-   ```
+      ```
+      git clone https://github.com/willisk-main/shopifychallenge.git
+      ```
    4. In IntelliJ navigate to File->New->Project from Existing Source, select the `/shopify` folder inside the *shopifychallenge* folder, then select Maven. 
    5. Add MySQL login credentials in the *application.properties* replacing the username *root* and the password *letmein*
-   ```
-   /shopify/src/main/resources/application.properties
-   ```
+      ```
+      /shopify/src/main/resources/application.properties
+      ```
    6. Run the java application located at 
-   ```
-   /shopify/src/main/java/com/willisk/shopify/ShopifyApplication.java
-   ```
+      ```
+      /shopify/src/main/java/com/willisk/shopify/ShopifyApplication.java
+      ```
    7. Open Postman to begin making http requests.  
 
 ## REST API
@@ -29,24 +29,24 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 
 1. *Retrieve all* inventory items as a JSON file
     - **GET** request
-    ```
-    localhost:8080/inventory/all
-    ```
+       ```
+       localhost:8080/inventory/all
+       ```
 
 
 2. *Find* an existing item by id
     - **GET** request
-    ```
-    localhost:8080/inventory/{id}
-    ```
+       ```
+       localhost:8080/inventory/{id}
+       ```
     - Replace `{id}` with the integer value of the item being searched. The request will return an error if the id does not exist.
 
 
 4. *Create* a new inventory item 
     - **POST** request 
-    ```
-    localhost:8080/inventory/add
-    ```
+       ```
+       localhost:8080/inventory/add
+       ```
     - Include a JSON body of the item being added. The id will be generated automatically. An example request body in JSON:
       ```
       {
@@ -59,9 +59,9 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 
 3. *Update* an existing item 
     - **PUT** request
-    ```
-    localhost:8080/inventory/update
-    ```
+       ```
+       localhost:8080/inventory/update
+       ```
     - Include a JSON body of the item being added and make sure to include the id. A new item will be created if the id does not exist.
     - An example JSON body of an item to update:
       ```
@@ -75,16 +75,16 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
       ```
 4. *Delete* an existing item 
     - **DELETE** request 
-    ```
-    localhost:8080/inventory/delete/{id}
-    ```
+       ```
+       localhost:8080/inventory/delete/{id}
+       ```
     - Replace {id} with the integer value of the item being deleted
 
 5. *Download CSV* of all inventory items
     - **GET** request
-    ```
-    localhost:8080/inventory/csv
-    ```
+       ```
+       localhost:8080/inventory/csv
+       ```
 
 ## One-Click CSV Download
 **Download all inventory items with the click of a button**
