@@ -28,7 +28,7 @@ public class ItemResource {
     }
 
     @GetMapping("/find/{id}")
-    public ResponseEntity<Item> getEmployeeById(@PathVariable("id") Long id) {
+    public ResponseEntity<Item> getItemById(@PathVariable("id") Long id) {
         Item item = inventoryService.findItemById(id);
         return new ResponseEntity<>(item, HttpStatus.OK);
     }
@@ -55,7 +55,7 @@ public class ItemResource {
     public void getAllItemsInCsv(HttpServletResponse servletResponse) throws IOException {
         servletResponse.setContentType("text/csv");
         servletResponse.addHeader("Content-Disposition","attachment; filename=\"inventory.csv\"");
-        inventoryService.writeEmployeesToCsv(servletResponse.getWriter());
+        inventoryService.writeItemsToCsv(servletResponse.getWriter());
     }
 
     @RequestMapping("/")
