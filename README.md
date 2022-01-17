@@ -3,7 +3,13 @@
 This is a simple inventory tracker that allows for CRUD operations through a REST API - specifications available [here](https://docs.google.com/document/d/1oO6BjQaskAn294iZ34094TIVOb5-kR7jgIcRNnLzFe8/edit?usp=sharing). In addition, this app allows one-click download of inventory items as a CSV file. It is written in Java and built using the [Spring Boot Framework](https://start.spring.io/) with a MySQL database. The application runs locally on port 8080; database on port 3306 - both default values. 
 
 ## Getting Started
-**Install [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), [Java](https://www.oracle.com/java/technologies/downloads/), [MySQL](https://dev.mysql.com/downloads/mysql/) and [Postman](https://www.postman.com/downloads/)**
+**Install the following programs**
+- [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows)
+- [Java 17 LTS](https://www.oracle.com/java/technologies/downloads/)
+- [MySQL Community Server 8](https://dev.mysql.com/downloads/mysql/) 
+- [Postman](https://www.postman.com/downloads/)
+
+**Running the application**
    1. Start a new MySQL server on localhost port 3306.
    2. Open the MySQL command line interface, login and create a new database with
       ```
