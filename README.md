@@ -9,7 +9,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
    ```
    create database inventory;
    ```
-   3. Unzip/extract or clone the *shopifychallenge* package from github 
+   3. Download/unzip or clone the *shopifychallenge* package from github 
    ```
    git clone https://github.com/willisk-main/shopifychallenge.git
    ```
