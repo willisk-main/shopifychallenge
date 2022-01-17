@@ -64,7 +64,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
     - **DELETE** ```localhost:8080/inventory/delete/{id}```
     - Replace `{id}` with the integer value of the item being deleted
 
-5. *Download CSV* of all inventory items
+5. *Retrive all* inventory items in CSV format
     - **GET** ```localhost:8080/inventory/csv```
 
 ## One-Click CSV Download
