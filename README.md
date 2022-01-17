@@ -11,7 +11,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
    ```
    3. Unzip/extract or clone the *shopifychallenge* package from github 
    ```
-   https://github.com/willisk-main/shopifychallenge.git
+   git clone https://github.com/willisk-main/shopifychallenge.git
    ```
    4. In IntelliJ navigate to File->New->Project from Existing Source, select the `/shopify` folder inside the *shopifychallenge* folder, then select Maven. 
    5. Add MySQL login credentials in the *application.properties* replacing the username *root* and the password *letmein*
