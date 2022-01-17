@@ -5,7 +5,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 ## Getting Started
 **Install [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), [MySQL](https://dev.mysql.com/downloads/mysql/) and [Postman](https://www.postman.com/downloads/)**
    1. Start a new MySQL server on localhost port 3306.
-   2. In the MySQL command line interface, login and create a new database with
+   2. Open the MySQL command line interface, login and create a new database with
       ```
       create database inventory;
       ```
