@@ -71,7 +71,6 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 **Download all inventory items with the click of a button**
 
 - In a web browser navigate to `localhost:8080` and click the link labeled *Click Here* (download should begin automatically)
-- Navigating directly to the url `localhost:8080/inventory/csv` will also begin the download
 - CSV data will have the format ```id, name, description, price, quantity```
       
 ## Thank you for reading!
