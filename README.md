@@ -47,5 +47,9 @@ The following operations are possible and will return a 200 status code if succe
 
 
 5. Download all inventory items as a CSV file (...inventory/csv/)
-    - Navigate to localhost:8080 and open the link labeled "click here" (the download should begin automatically)
-    - In addition, navigating directly to localhost:8080/inventory/csv will also begin the download
+    - There are several ways to get a CSV download of items in the inventory.
+      a. Navigate to localhost:8080 and open the link labeled "click here" (the download should begin automatically)
+      b. Navigating directly to localhost:8080/inventory/csv will also begin the download
+      c. GET request to localhost:8080/inventory/csv
+   - CSV data will have the following format
+      id, name, description, price, quantity
