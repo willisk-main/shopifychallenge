@@ -4,7 +4,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 
 ## Getting Started
 **Install [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), [MySQL](https://dev.mysql.com/downloads/mysql/) and [Postman](https://www.postman.com/downloads/)**
-   1. Start a new MySQL server on localhost port 3306 `localhost:3306`
+   1. Start a new MySQL server on localhost port 3306
    3. Create new database named 'inventory' by typing `create database inventory;` in the MySQL command line interface.
    4. In IntelliJ navigate to File->New->Project from Existing Source, select the unzipped `/shopify` folder, then select Maven. 
    5. Add MySQL login credentials in the "application.properties" file in the maven project - located at `/shopify/src/main/resources/application.properties`
