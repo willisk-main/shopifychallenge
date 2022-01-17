@@ -51,7 +51,7 @@ public class InventoryService {
     }
 
 
-    public void writeEmployeesToCsv(Writer writer) {
+    public void writeItemsToCsv(Writer writer) {
 
         List<Item> inventory = inventoryRepo.findAll();
         try (CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT)) {
