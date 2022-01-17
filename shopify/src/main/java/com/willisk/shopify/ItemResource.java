@@ -54,7 +54,7 @@ public class ItemResource {
     @RequestMapping(path = "/csv")
     public void getAllItemsInCsv(HttpServletResponse servletResponse) throws IOException {
         servletResponse.setContentType("text/csv");
-        servletResponse.addHeader("Content-Disposition","attachment; filename=\"employees.csv\"");
+        servletResponse.addHeader("Content-Disposition","attachment; filename=\"inventory.csv\"");
         inventoryService.writeEmployeesToCsv(servletResponse.getWriter());
     }
 
