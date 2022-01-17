@@ -1,6 +1,6 @@
 # Inventory Tracker
 
-This is a simple inventory tracker that allows for CRUD operations through a REST API - specifications available [here](https://docs.google.com/document/d/1oO6BjQaskAn294iZ34094TIVOb5-kR7jgIcRNnLzFe8/edit?usp=sharing). In addition, this app allows downloading of stored product items as a CSV file. It is written in Java and built using the Spring Boot Framework with MySQL for the database. The application runs locally on port 8080; the database runs on port 3306 - both default values. 
+This is a simple inventory tracker that allows for CRUD operations through a REST API - specifications available [here](https://docs.google.com/document/d/1oO6BjQaskAn294iZ34094TIVOb5-kR7jgIcRNnLzFe8/edit?usp=sharing). In addition, this app allows downloading of stored product items as a CSV file. It is written in Java and built using the Spring Boot Framework with MySQL for the database. The application runs locally on port 8080; database on port 3306 - both default values. 
 
 ## Getting Started
 **Install [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), [MySQL](https://dev.mysql.com/downloads/mysql/) and [Postman](https://www.postman.com/downloads/)**
