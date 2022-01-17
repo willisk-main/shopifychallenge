@@ -27,7 +27,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 ## REST API
 **The following http requests will return a 200 status code if successful**
 
-1. *Retrieve all* inventory items as a JSON file
+1. *Retrieve all* inventory items as a JSON object
     - **GET**  ```localhost:8080/inventory/all```
 
 
