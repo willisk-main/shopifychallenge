@@ -28,25 +28,16 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 **The following http requests will return a 200 status code if successful**
 
 1. *Retrieve all* inventory items as a JSON file
-    - **GET** request
-       ```
-       localhost:8080/inventory/all
-       ```
+    - **GET**  ```localhost:8080/inventory/all```
 
 
 2. *Find* an existing item by id
-    - **GET** request
-       ```
-       localhost:8080/inventory/{id}
-       ```
+    - **GET** ```localhost:8080/inventory/{id}```
     - Replace `{id}` with the integer value of the item being searched. The request will return an error if the id does not exist.
 
 
 4. *Create* a new inventory item 
-    - **POST** request 
-       ```
-       localhost:8080/inventory/add
-       ```
+    - **POST** ```localhost:8080/inventory/add```
     - Include a JSON body of the item being added. The id will be generated automatically. An example request body in JSON:
       ```
       {
@@ -58,33 +49,23 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
       ```
 
 3. *Update* an existing item 
-    - **PUT** request
-       ```
-       localhost:8080/inventory/update
-       ```
+    - **PUT** ```localhost:8080/inventory/update```
     - Include a JSON body of the item being added and make sure to include the id. A new item will be created if the id does not exist.
-    - An example JSON body of an item to update:
       ```
       {
         "id": 1
         "name": "Apple Watch 7",
-        "description": "GPS+Cellular",
+        "description": "Space Grey, GPS",
         "price": 399.99,
         "quantity": 4
       }    
       ```
 4. *Delete* an existing item 
-    - **DELETE** request 
-       ```
-       localhost:8080/inventory/delete/{id}
-       ```
-    - Replace {id} with the integer value of the item being deleted
+    - **DELETE** ```localhost:8080/inventory/delete/{id}```
+    - Replace `{id}` with the integer value of the item being deleted
 
 5. *Download CSV* of all inventory items
-    - **GET** request
-       ```
-       localhost:8080/inventory/csv
-       ```
+    - **GET** ```localhost:8080/inventory/csv```
 
 ## One-Click CSV Download
 **Download all inventory items with the click of a button**
