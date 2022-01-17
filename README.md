@@ -6,11 +6,11 @@ It is built with Spring Boot using MySQL for the database. Ideally the applicati
 
 ## Getting Started
 **To get started:**
-   1. Open the "shopify" folder as an existing source in an IDE such as IntelliJ. 
-   2. Run the "ShopifyApplication.java" located at "shopify/src/main/java/com/willisk/shopify/ShopifyApplication.java"
-   3. Create a MySql database named "inventory" running on localhost:3306
-   4. Add MySQL login credentials in the "application.properties" file in the maven project - located at    "src/main/resources/application.properties" in the /shopify folder. 
-   5. Open a REST client such as Postman to make http requests described in the next section.  
+   1. Open the "shopify" folder as an existing source in an IDE such as [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows). 
+   2. Create a [MySql](https://dev.mysql.com/downloads/mysql/) database named "inventory" running on localhost:3306
+   3. Add MySQL login credentials in the "application.properties" file in the maven project - located at    `src/main/resources/application.properties` in the /shopify folder. 
+   4. Run the java application located at `shopify/src/main/java/com/willisk/shopify/ShopifyApplication.java`
+   5. Open a REST client such as [Postman](https://www.postman.com/downloads/) to make http requests described in the next section.  
 
 ## REST API
 **The following operations are possible and will return a 200 status code if successful:**
