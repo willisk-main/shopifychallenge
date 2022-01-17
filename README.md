@@ -4,7 +4,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 
 ## Getting Started
 **Install the following programs:**
-- [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows) - Java integrated development environment (IDE)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows) - Java integrated development environment (IDE)
 - [Java 17 LTS](https://www.oracle.com/java/technologies/downloads/) - development environment for building applications
 - [MySQL Community Server 8](https://dev.mysql.com/downloads/mysql/) - open-source relational database management system (RDBMS)
 - [Postman](https://www.postman.com/downloads/) - REST API client
