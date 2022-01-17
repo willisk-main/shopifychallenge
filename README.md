@@ -38,7 +38,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 
 3. *Update* an existing item 
     - **PUT** request to `localhost:8080/inventory/update`
-    - Include a JSON body of the item being added and make sure to include the id. The request will create a new item if the id does not exist.
+    - Include a JSON body of the item being added and make sure to include the id. A new item will be created if the id does not exist.
     - An example JSON body of an item to update:
       ```
       {
