@@ -1,4 +1,4 @@
-# Shopify 2022 Intern Challenge
+# Inventory Tracker
 
 This is a simple inventory tracker that allows for CRUD operations through a REST API. In addition, this app allows downloading of all the currently stored product items as a CSV file. It is built with Spring Boot using MySQL for the database. The application runs locally on port 8080 and the database on port 3306, both default values. 
 
