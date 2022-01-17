@@ -1,17 +1,15 @@
 # Shopify 2022 Intern Challenge
 
-This is a simple inventory tracker that allows for CRUD operations through a REST API. In addition, this app allows downloading of all the currently stored product items as a CSV file. 
-
-It is built with Spring Boot using MySQL for the database. Ideally the application would be dockerized and deployed but for our purposes, this application runs locally on port 8080. This application requires a [MySQL database](https://dev.mysql.com/downloads/mysql/) named "inventory" running locally on port 3306 (default).
+This is a simple inventory tracker that allows for CRUD operations through a REST API. In addition, this app allows downloading of all the currently stored product items as a CSV file. It is built with Spring Boot using MySQL for the database. Ideally the application would be dockerized and deployed but for our purposes, this application runs locally on port 8080. 
 
 ## Getting Started
-**This application requires the installation of [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), [MySql](https://dev.mysql.com/downloads/mysql/) and [Postman](https://www.postman.com/downloads/) in order to run properly**
-   1. In [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), navigate to File->New->Project from Existing Source, select the unzipped `/shopify` folder, then select Maven. 
-   2. Install and start a new [MySql](https://dev.mysql.com/downloads/mysql/) server on localhost port 3306 `localhost:3306/`
-   3. Create database inventory by typing `create database inventory;` in MySQL command line interface.
-   4. Add MySQL login credentials in the "application.properties" file in the maven project - located at    `src/main/resources/application.properties` in the /shopify folder. 
-   5. Run the java application located at `shopify/src/main/java/com/willisk/shopify/ShopifyApplication.java`
-   6. Open a REST client such as [Postman](https://www.postman.com/downloads/) to make http requests described in the next section.  
+**This application requires the installation of [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), [MySQL](https://dev.mysql.com/downloads/mysql/) and [Postman](https://www.postman.com/downloads/) in order to run properly**
+   1. In IntelliJ navigate to File->New->Project from Existing Source, select the unzipped `/shopify` folder, then select Maven. 
+   2. Start a new MySQL server on localhost port 3306(default) `localhost:3306/`
+   3. Create new database named 'inventory' by typing `create database inventory;` in the MySQL command line interface.
+   4. Add MySQL login credentials in the "application.properties" file in the maven project - located at `/shopify/src/main/resources/application.properties`
+   5. In IntelliJ run the java application located at `shopify/src/main/java/com/willisk/shopify/ShopifyApplication.java`
+   6. Open Postman to begin making http requests.  
 
 ## REST API
 **The following http requests will return a 200 status code if successful.**
