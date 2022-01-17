@@ -3,7 +3,7 @@
 This is a simple inventory tracker that allows for CRUD operations through a REST API. In addition, this app allows downloading of all the currently stored product items as a CSV file. It is built with Spring Boot using MySQL for the database. The application runs locally on port 8080 and the database on port 3306, both default values. 
 
 ## Getting Started
-**Install [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), [MySQL](https://dev.mysql.com/downloads/mysql/) and [Postman](https://www.postman.com/downloads/) in order to run properly**
+**Install [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), [MySQL](https://dev.mysql.com/downloads/mysql/) and [Postman](https://www.postman.com/downloads/)**
    1. Start a new MySQL server on localhost port 3306 `localhost:3306`
    3. Create new database named 'inventory' by typing `create database inventory;` in the MySQL command line interface.
    4. In IntelliJ navigate to File->New->Project from Existing Source, select the unzipped `/shopify` folder, then select Maven. 
