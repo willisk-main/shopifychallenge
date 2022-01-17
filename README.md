@@ -1,6 +1,6 @@
 # Inventory Tracker
 
-This is a simple inventory tracker that allows for CRUD operations through a REST API. In addition, this app allows downloading of all the currently stored product items as a CSV file. It is built with Spring Boot and MySQL for the database. The application runs locally on port 8080 and the database on port 3306 - both default values. 
+This is a simple inventory tracker that allows for CRUD operations through a REST API - specifications available [here](https://docs.google.com/document/d/1oO6BjQaskAn294iZ34094TIVOb5-kR7jgIcRNnLzFe8/edit?usp=sharing). In addition, this app allows downloading of all the currently stored product items as a CSV file. It is built with Spring Boot and MySQL for the database. The application runs locally on port 8080 and the database on port 3306 - both default values. 
 
 ## Getting Started
 **Install [IntelliJ](https://www.jetbrains.com/idea/download/?fromIDE=#section=windows), [MySQL](https://dev.mysql.com/downloads/mysql/) and [Postman](https://www.postman.com/downloads/)**
@@ -93,3 +93,5 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 - Navigating directly to the url `localhost:8080/inventory/csv` will also begin the download
 - CSV data will have the following format
       <br/>&nbsp; ```id, name, description, price, quantity```
+## Thank you for the learning opportunity
+![alt text](https://cdn.shopify.com/s/files/1/0611/1605/5788/t/2/assets/shopify-internships-logo.svg?v=5409994561124683960 "Shopify Internships")
