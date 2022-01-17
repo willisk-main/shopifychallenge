@@ -59,7 +59,7 @@ It is built with Spring Boot using MySQL for the database. Ideally the applicati
 ## One-Click CSV Download
 Download all inventory items as a CSV file with a click of a button:
 
-- Navigate to `localhost:8080` and click the link labeled **Click Here** (download should begin automatically)
+- Navigate to `localhost:8080` and click the link labeled *Click Here* (download should begin automatically)
 - Navigating directly to `localhost:8080/inventory/csv` will also begin the download
 - CSV data will have the following format
       <br/>&nbsp; `id, name, description, price, quantity`
