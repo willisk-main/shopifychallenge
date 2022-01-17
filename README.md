@@ -38,7 +38,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 
 4. *Create* a new inventory item 
     - **POST** ```localhost:8080/inventory/add```
-    - Include in the request body a JSON object with item details. The id will be generated automatically. For example,
+    - Include in the request body a JSON object with item details (name, description, price, quantity). The item id will be generated automatically with the request. 
       ```
       {
         "name": "Apple Watch 7",
