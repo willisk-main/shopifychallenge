@@ -5,7 +5,7 @@
    It is built with Spring Boot using MySQL for the database. Ideally the application would be dockerized and deployed alongside a MySQL database image but for our purposes, this application runs locally on port 8080. The easiest way to get started is to run the maven project (folder named "shopify) in an IDE such as IntelliJ then using a REST client such as Postman to make requests. This application requires a MySQL database named "inventory" running locally on port 3306 (default) and the login credentials added in the application.properties file in the maven project - located at "src/main/resources/application.properties" in the shopify folder. 
 
 
-
+<br/>
 The following operations are possible and will return a 200 status code if successful:
 
 1. Retrieve all inventory items as a JSON file (.../inventory/all)
@@ -27,7 +27,7 @@ The following operations are possible and will return a 200 status code if succe
         "quantity": 19
       }
       
-      
+
 3. Update an existing item (.../inventory/update)
     - PUT request to localhost:8080/inventory/update
     - Include a JSON body of the item being added and make sure to include the id. The request will create a new item if the id does not exist.
@@ -40,7 +40,6 @@ The following operations are possible and will return a 200 status code if succe
         "quantity": 4
       }    
 
-
 4. Delete an existing item (.../inventory/delete/{id})
     - DELETE request to localhost:8080/inventory/delete/{id}
     - Replace {id} with the integer value of the item being deleted
@@ -48,8 +47,8 @@ The following operations are possible and will return a 200 status code if succe
 
 5. Download all inventory items as a CSV file (...inventory/csv/)
     - There are several ways to get a CSV download of items in the inventory.
-      a. Navigate to localhost:8080 and open the link labeled "click here" (the download should begin automatically)
-      b. Navigating directly to localhost:8080/inventory/csv will also begin the download
-      c. GET request to localhost:8080/inventory/csv
+      <br/>&nbsp; a. Navigate to localhost:8080 and open the link labeled "click here" (the download should begin automatically)
+      <br/>&nbsp; b. Navigating directly to localhost:8080/inventory/csv will also begin the download
+      <br/>&nbsp; c. GET request to localhost:8080/inventory/csv
    - CSV data will have the following format
-      id, name, description, price, quantity
+      <br/>&nbsp; (id, name, description, price, quantity)
