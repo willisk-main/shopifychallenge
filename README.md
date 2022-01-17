@@ -8,7 +8,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
    3. Create new database named 'inventory' by typing `create database inventory;` in the MySQL command line interface.
    4. Unzip/extract the *shopifychallenge* file downloaded from github.
    5. In IntelliJ navigate to File->New->Project from Existing Source, select the `/shopify` folder inside the unzipped file location, then select Maven. 
-   6. Add MySQL login credentials in the *application.properties* file located at `/shopify/src/main/resources/application.properties`  replacing the user *root* and the password *letmein* - 
+   6. Add MySQL login credentials in the *application.properties* file located at `/shopify/src/main/resources/application.properties`  replacing the user *root* and the password *letmein*.
    7. Run the java application located at `shopify/src/main/java/com/willisk/shopify/ShopifyApplication.java`
    8. Open Postman to begin making http requests.  
 
