@@ -15,16 +15,16 @@ It is built with Spring Boot using MySQL for the database. Ideally the applicati
 ## REST API
 **The following operations are possible and will return a 200 status code if successful:**
 
-1. Retrieve all inventory items as a JSON file `.../inventory/all`
+1. *Retrieve all* inventory items as a JSON file `/inventory/all`
     - GET request to the URL localhost:8080/inventory/all
 
 
-2. Find an existing item by id `.../inventory/{id}`
+2. *Find* an existing item by id `/inventory/{id}`
     - GET request to the url localhost:8080/inventory/{id}
     - Replace {id} with the integer value of the item being searched. The request will return an error if the id does not exist.
 
 
-4. Create a new inventory item `...inventory/add`
+4. *Create* a new inventory item `/inventory/add`
     - POST request to localhost:8080/inventory/add
     - Include a JSON body of the item being added. The id will be generated automatically. An example request body in JSON:
       ```
@@ -36,7 +36,7 @@ It is built with Spring Boot using MySQL for the database. Ideally the applicati
       }
       ```
 
-3. Update an existing item `.../inventory/update`
+3. *Update* an existing item `/inventory/update`
     - PUT request to localhost:8080/inventory/update
     - Include a JSON body of the item being added and make sure to include the id. The request will create a new item if the id does not exist.
     - An example JSON body of an item to update:
@@ -49,16 +49,17 @@ It is built with Spring Boot using MySQL for the database. Ideally the applicati
         "quantity": 4
       }    
       ```
-4. Delete an existing item `.../inventory/delete/{id}`
+4. *Delete* an existing item `/inventory/delete/{id}`
     - DELETE request to localhost:8080/inventory/delete/{id}
     - Replace {id} with the integer value of the item being deleted
 
-5. Download inventory items as a CSV file `/inventory/csv`
+5. *Download CSV* of inventory items `/inventory/csv`
     - GET request to localhost:8080/inventory/csv
 
-## Download CSV
-Download all inventory items as a CSV file with a click of a button
-    - Navigate to localhost:8080 and open the link labeled "Click Here" (the download should begin automatically)
-    - Navigating directly to localhost:8080/inventory/csv will also begin the download
-    - CSV data will have the following format
-      <br/>&nbsp; (id, name, description, price, quantity)
+## One-Click CSV Download
+Download all inventory items as a CSV file with a click of a button:
+
+- Navigate to localhost:8080 and open the link labeled "Click Here" (the download should begin automatically)
+- Navigating directly to localhost:8080/inventory/csv will also begin the download
+- CSV data will have the following format
+      <br/>&nbsp; `id, name, description, price, quantity`
