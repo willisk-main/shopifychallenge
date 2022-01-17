@@ -13,7 +13,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
    8. Open Postman to begin making http requests.  
 
 ## REST API
-**The following http requests will return a 200 status code if successful.**
+**The following http requests will return a 200 status code if successful**
 
 1. *Retrieve all* inventory items as a JSON file
     - **GET** request to `localhost:8080/inventory/all`
@@ -53,11 +53,11 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
     - **DELETE** request to `localhost:8080/inventory/delete/{id}`
     - Replace {id} with the integer value of the item being deleted
 
-5. *Download CSV* of inventory items
+5. *Download CSV* of all inventory items
     - **GET** request to `localhost:8080/inventory/csv`
 
 ## One-Click CSV Download
-Download all inventory items as a CSV file with the click of a button:
+**Download all inventory items with the click of a button**
 
 - Navigate to `localhost:8080` and click the link labeled *Click Here* (download should begin automatically)
 - Navigating directly to `localhost:8080/inventory/csv` will also begin the download
