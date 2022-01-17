@@ -93,5 +93,6 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 - Navigating directly to the url `localhost:8080/inventory/csv` will also begin the download
 - CSV data will have the following format
       <br/>&nbsp; ```id, name, description, price, quantity```
-## Thank you for the learning opportunity!
+      
+## Thank you for reading!
 ![alt text](https://cdn.shopify.com/s/files/1/0611/1605/5788/t/2/assets/shopify-internships-logo.svg?v=5409994561124683960 "Shopify Internships")
