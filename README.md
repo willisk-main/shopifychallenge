@@ -31,6 +31,16 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
    7. Open Postman to begin making http requests.  
 
 ## REST API
+
+**Quick Guide**
+
+**GET**  ```localhost:8080/inventory/all```
+**GET** ```localhost:8080/inventory/find/{id}```
+ **POST** ```localhost:8080/inventory/add```
+ **DELETE** ```localhost:8080/inventory/delete/{id}```
+ **PUT** ```localhost:8080/inventory/update```
+**GET** ```localhost:8080/inventory/csv```
+
 **The following http requests will return a 200 status code if successful**
 
 1. *Retrieve all* inventory items as a JSON object
@@ -38,7 +48,7 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 
 
 2. *Find* an existing item by id
-    - **GET** ```localhost:8080/inventory/{id}```
+    - **GET** ```localhost:8080/inventory/find/{id}```
     - Replace `{id}` with the integer value of the item being searched. The request will return an error if the id does not exist.
 
 
