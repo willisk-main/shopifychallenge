@@ -34,12 +34,12 @@ This is a simple inventory tracker that allows for CRUD operations through a RES
 
 **Quick Guide**
 
-- **GET**  ```localhost:8080/inventory/all```
-- **GET** ```localhost:8080/inventory/find/{id}```
--  **POST** ```localhost:8080/inventory/add```
--  **DELETE** ```localhost:8080/inventory/delete/{id}```
--  **PUT** ```localhost:8080/inventory/update```
-- **GET** ```localhost:8080/inventory/csv```
+- **GET**  ```/all```
+- **GET** ```/find/{id}```
+-  **POST** ```/add```
+-  **DELETE** ```/delete/{id}```
+-  **PUT** ```/update```
+- **GET** ```/csv```
 
 **The following http requests will return a 200 status code if successful**
 
